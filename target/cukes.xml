@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="250.675">
+<testcase classname="Register: user could register with new account" name="guest user could register with valid data successfully" time="11.845">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select Gender type................................................passed
+And User Enter First name...................................................passed
+And user enter last name....................................................passed
+And user enter date of birth................................................passed
+And user enter Email........................................................passed
+And User fill password fields...............................................passed
+And user click on Register Button...........................................passed
+Then register success message displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login: users could use their accounts to login successfully" name="user enter valid email and password" time="9.941">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login: users could use their accounts to login successfully" name="user enter InValid email and password" time="10.025">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with InValid userName and Password..........................passed
+And user click on login button..............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can select currency and applied to products successfully" name="user select currency successfully" time="11.16">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then Select euro currency...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can search in the Website successfully" name="user enter different variables in the search field to search for" time="10.793">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user could search using product name "book"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can search in the Website successfully" name="user enter different variables in the search field to search for 2" time="11.547">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user could search using product name "laptop"..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can search in the Website successfully" name="user enter different variables in the search field to search for 3" time="10.744">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user could search using product name "nike"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can search in the Website successfully" name="user enter different variables in the search field to search for 4" time="12.424">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user could search for product using sku "SCI_FAITH"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can search in the Website successfully" name="user enter different variables in the search field to search for 5" time="13.314">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user could search for product using sku "APPLE_CAM"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can search in the Website successfully" name="user enter different variables in the search field to search for 6" time="14.154">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user could search for product using sku "SF_PRO_11"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can hover on main Categories and select  sub-categories" name="user hover on a category then select a sub-category" time="25.855">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+And Hover on a Category.....................................................passed
+Then Select a Sub-Category..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="selecting fom HomeSlider" name="user select from the HomeSlider Nokia" time="12.203">
+<failure message="expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then click on the HomeSlider Nokia..........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D06_homeSlidersStepDef.clickONSliderN(D06_homeSlidersStepDef.java:17)
+	at ✽.click on the HomeSlider Nokia(file:///G:/Gaber/E-comerce%20projects/E-commerceFinalProject1/src/main/resources/features/F06_homeSliders.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="selecting fom HomeSlider" name="user select from the HomeSlider IPhone" time="14.678">
+<failure message="expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then click on the HomeSlider Iphone.........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D06_homeSlidersStepDef.clickOnSliderIPHone(D06_homeSlidersStepDef.java:25)
+	at ✽.click on the HomeSlider Iphone(file:///G:/Gaber/E-comerce%20projects/E-commerceFinalProject1/src/main/resources/features/F06_homeSliders.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="follow us feature" name="user opens facebook link" time="12.004">
+<failure message="expected [https://web.facebook.com/nopCommerce?_rdc=1&amp;_rdr] but found [https://www.facebook.com/nopCommerce]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then click on FacebookLink..................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://web.facebook.com/nopCommerce?_rdc=1&_rdr] but found [https://www.facebook.com/nopCommerce]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D07_followUsStepDef.clickFacebookLink(D07_followUsStepDef.java:22)
+	at ✽.click on FacebookLink(file:///G:/Gaber/E-comerce%20projects/E-commerceFinalProject1/src/main/resources/features/F07_followUs.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="follow us feature" name="user opens twitter link" time="12.63">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then click on TwitterLink...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="follow us feature" name="user opens rss link" time="12.41">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then click on RssLink.......................................................failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.stepDefs.D07_followUsStepDef.clickOnRssLink(D07_followUsStepDef.java:47)
+	at ✽.click on RssLink(file:///G:/Gaber/E-comerce%20projects/E-commerceFinalProject1/src/main/resources/features/F07_followUs.feature:22)
+]]></failure>
+</testcase>
+<testcase classname="follow us feature" name="user opens youtube link" time="20.564">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then click on YoutubeLink...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wishlist Feature to add items to wishlist" name="user click on wishlist button to add item to wishlist" time="10.446">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user click on Wishlist button on this product "HTC One M8 Android L 5.0 Lollipop".passed
+]]></system-out>
+</testcase>
+<testcase classname="Wishlist Feature to add items to wishlist" name="user click on wishlist button to add item to wishlist 2" time="13.565">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with Valid userName and Password............................passed
+And user click on login button..............................................passed
+Then user click on Wishlist button on this product "HTC One M8 Android L 5.0 Lollipop".passed
+And click on Wishlist Tab...................................................passed
+And Get The Quantity Value od The selected Item.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
